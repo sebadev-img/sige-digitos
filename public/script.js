@@ -26,7 +26,11 @@ const getUniqueDNI = (text) => {
       const node = document.createElement("li");
       node.appendChild(document.createTextNode(dni));
       node.addEventListener("click", () => {
-        node.classList.toggle("complete");
+        //node.classList.toggle("complete");
+        const URL =
+          "https://sige.tierradelfuego.gob.ar/SIGEGX/serviciosdeldocente.aspx?" +
+          dni;
+        window.open(URL, "_blank");
       });
       ul.appendChild(node);
     });

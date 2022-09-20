@@ -78,6 +78,10 @@ ul {
 li {
   margin-top: 10px;
   font-size: 18px;
+  cursor: pointer;
+}
+li:hover {
+  color: #c45e5e;
 }
 
 .complete {
